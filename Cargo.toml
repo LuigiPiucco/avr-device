@@ -101,7 +101,7 @@ optional = true
 
 [build-dependencies]
 svd2rust = "=0.35.0"
-svdtools = "=0.4.5"
+svdtools = { git = "https://github.com/rust-embedded/svdtools.git", rev = "2732f60029376fe1d4df0ca4d7d1fafef2adca60" }
 atdf2svd = "=0.4.0"
 prettyplease = "0.2"
 syn = { version = "2", default-features = false, features = ["full", "parsing"] }
