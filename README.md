@@ -57,10 +57,7 @@ To add a new chip:
 3. Add any needed patches to a yaml file with the same name under the `patch`
    directory, ideally by including some of the snippets present in
    `patch/common` and `patch/timer`; The format is decribed
-   [here](https://github.com/rust-embedded/svdtools#device-and-peripheral-yaml-format),
-   but it should not include the top-level `_svd` key, as that's handled by the
-   build system; If patching is unneeded (it's almost always needed!), the file
-   can be omitted.
+   [here](https://github.com/rust-embedded/svdtools#device-and-peripheral-yaml-format).
 4. Include the module into the tree, in [`devices.rs`](./src/devices.rs),
    following the format used by other modules in that file;
 5. Finally, try building the crate for your MCU with
